@@ -11,7 +11,6 @@ Pour l’installation : Télécharger ici : http://rclone.org/downloads/ la vers
 lien marche très bien.
 
 Ensuite il faut faire l’installation :
-
 unzip rclone-v1.17-linux-amd64.zip
 cd rclone-v1.17-linux-amd64
 
