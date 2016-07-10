@@ -11,16 +11,22 @@ Pour l’installation : Télécharger ici : http://rclone.org/downloads/ la vers
 lien marche très bien.
 
 Ensuite il faut faire l’installation :
-unzip rclone-v1.17-linux-amd64.zip
-cd rclone-v1.17-linux-amd64
 
-sudo cp rclone /usr/sbin/
-sudo chown root:root /usr/sbin/rclone
-sudo chmod 755 /usr/sbin/rclone
+  unzip rclone-v1.17-linux-amd64.zip
 
-sudo mkdir -p /usr/local/share/man/man1
-sudo cp rclone.1 /usr/local/share/man/man1/
-sudo mandb
+  cd rclone-v1.17-linux-amd64
+
+  sudo cp rclone /usr/sbin/
+
+  sudo chown root:root /usr/sbin/rclone
+
+  sudo chmod 755 /usr/sbin/rclone
+
+  sudo mkdir -p /usr/local/share/man/man1
+
+  sudo cp rclone.1 /usr/local/share/man/man1/
+
+  sudo mandb
 
 Une fois installer il faut faire la configuration je vous invite à regarder la page officiel de Rclone suivant votre cloud.
 Mois j’ai fait l’installation pour Hubic : http://rclone.org/docs/
