@@ -32,27 +32,27 @@ done
 
 #Sauvegarde sur Cloud Hubic avec rclone
 #site www
-rclone copy /var/www/ Hubic:default/CloudVPS/www/ 
+/usr/sbin/rclone copy /var/www/ Hubic:default/CloudVPS/www/ 
 gestion_retour $? 'Erreur sur sauvegarde dossier www' 1
 
 #repertoire ect
-rclone copy /etc/ Hubic:default/CloudVPS/etc/ 
+/usr/sbin/rclone copy /etc/ Hubic:default/CloudVPS/etc/ 
 gestion_retour $? 'Erreur sur sauvegarde dossier etc' 1
 
 #répertoire my sql
-rclone copy /var/lib/mysql/ Hubic:default/CloudVPS/mysql/ 
+/usr/sbin/rclone copy /var/lib/mysql/ Hubic:default/CloudVPS/mysql/ 
 gestion_retour $? 'Erreur sur sauvegarde dossier /var/lib/mysql' 1
 
 #répertoire michelgard
-rclone copy /home/michelgard/ Hubic:default/CloudVPS/home/michelgard 
+/usr/sbin/rclone copy /home/michelgard/ Hubic:default/CloudVPS/home/michelgard 
 gestion_retour $? 'Erreur sur sauvegarde dossier michelgard' 1
 
 #répertoire final
-rclone copy /home/final/ Hubic:default/CloudVPS/home/final
+/usr/sbin/rclone copy /home/final/ Hubic:default/CloudVPS/home/final
 gestion_retour $? 'Erreur sur sauvegarde dossier final' 1
 
 #les bases sauvées plus haut
-rclone copy /home/final/base_DB/ Hubic:default/CloudVPS/base_DB/ 
+/usr/sbin/rclone copy /home/final/base_DB/ Hubic:default/CloudVPS/base_DB/ 
 gestion_retour $? 'Erreur sur sauvegarde des bases' 1
 
 /home/michelgard/backupHubic/mailBackup.php "\"Sauvegarde sur Hubic avec succes !\"" 0
