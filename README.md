@@ -43,3 +43,4 @@ et si tout va bien un mail est envoyé avec OK.
 
 Une tache cron toutes les nuit pour lancer le programme. La sauvegarde est incrémentale et sans compression.
 
+www.blog-de-michel.fr
